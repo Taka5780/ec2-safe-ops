@@ -37,6 +37,40 @@ This tool introduces **multi-layer safeguards** to minimize such risks.
 
 ---
 
+## 🔁 Resource Lifecycle Management (Concept)
+
+This tool represents a part of a broader **resource lifecycle management strategy**.
+
+Cloud resources typically go through multiple stages:
+
+- Provisioning
+- Active use
+- Idle / unused
+- Termination
+
+This tool focuses on the **safe transition between states**, especially:
+
+- Running → Stopped
+- Stopped → Started
+- Stopped → Terminated
+
+Rather than fully automating decisions, this design intentionally incorporates:
+
+- Human verification (HumanCheck)
+- Explicit intent confirmation
+- Controlled execution boundaries
+
+This reflects a hybrid approach:
+
+> **Automation + Human Judgment**
+
+Future extensions may include:
+
+- Automated lifecycle detection (idle resources)
+- Policy-based lifecycle control
+- Integration with monitoring and auto-healing systems
+
+
 ## ⚙️ Architecture
 
 EC2 (AWS)  
