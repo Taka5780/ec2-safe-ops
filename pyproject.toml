@@ -1,0 +1,27 @@
+[project]
+name = "ec2-safe-ops"
+version = "0.1.0"
+description = "Safety-first EC2 operations tool with human verification, Excel workflow, and built-in safeguards against accidental actions"
+requires-python = ">=3.10"
+dependencies = [
+    "typer",
+    "boto3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+    "mypy",
+    "moto[ec2,s3,lambda,rds,dynamodb]",
+    "boto3-stubs[s3,ec2]",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

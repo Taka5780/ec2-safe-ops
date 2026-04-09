@@ -1,0 +1,30 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# --- Excel (Temporary Files) ---
+~$*.xlsx
+~$*.xlsm
+
+# --- App Data (Executions & Reports) ---
+src/ec2_app/executions/*.csv
+src/ec2_app/executions/old/*.csv
+src/ec2_app/reports/*.xlsx
+
+# --- Logs ---
+logs/
+*.log
+
+# --- Terraform (Tests/Infra) ---
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# --- OS ---
+.DS_Store
